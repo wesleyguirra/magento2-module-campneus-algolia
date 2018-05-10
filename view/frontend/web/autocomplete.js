@@ -99,6 +99,11 @@ requirejs(['algoliaBundle' , 'ko' , 'Webjump_CampneusCatalog/js/model/controller
                     fixAutocompleteCssHeight(menu);
                 }).on('autocomplete:selected', function (e, suggestion, dataset) {
                     grid.getProducts(suggestion.objectID);
+                }).on('keyup keypress', function(event) {
+                    let keyCode = event.keyCode ? event.keyCode : event.which;
+
+                    if (keyCode == 13)
+                        return false;
                 });
 
             $(window).resize(function () {
