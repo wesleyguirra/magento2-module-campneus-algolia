@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <!-- Uncomment the following line to include files with front-end hook methods -->
+        <!-- <script src="Algolia_CustomAlgolia::hooks.js" /> -->
+
+        <!-- Uncomment the following line to remove the main algolia CSS file -->
+        <!-- <remove src="Algolia_AlgoliaSearch::internals/algoliasearch.css" /> -->
+
+        <!-- Uncomment the following line to load your custom CSS file -->
+        <!-- <css src="Algolia_CustomAlgolia::customalgolia.css" /> -->
+
+        <!-- Uncomment the following line to remove the main algolia autocomplete.js file -->
+       <remove src="Algolia_AlgoliaSearch::autocomplete.js" />
+
+        <!-- Uncomment the following line to load your custom autocomplete.js file -->
+        <script src="Webjump_CampneusAlgoliaSearch::autocomplete.js" />
+    </head>
+    <body>
+        <referenceBlock name="before.body.end">
+            <!-- Uncomment the following line to declare a new template -->
+            <!--<block class="Magento\Framework\View\Element\Template" name="custom.autocomplete.template" template="Webjump_CampneusAlgoliaSearch::autocomplete/custom.phtml"/>-->
+            <!-- Uncomment the following line to override the autocomplete/page template -->
+            <referenceBlock name="algolia.autocomplete.product" template="Webjump_CampneusAlgoliaSearch::autocomplete/product.phtml" />
+            <!-- Uncomment the following line to override the autocomplete/page template -->
+            <referenceBlock name="algolia.autocomplete.menu" template="Webjump_CampneusAlgoliaSearch::autocomplete/menu.phtml" />
+        </referenceBlock>
+        <!--
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="custom.js" template="Webjump_CampneusAlgoliaSearch::custom_js.phtml"/>
+        </referenceContainer> -->
+    </body>
+
+</page>
