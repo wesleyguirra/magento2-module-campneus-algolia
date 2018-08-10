@@ -1,8 +1,8 @@
 {
-    "name": "webjump-campneus/module-algolia-search",
+    "name": "webjump/magento2-module-campneus-algolia",
     "license": "proprietary",
     "type": "magento2-module",
-    "description": "Webjump's Magento 2 Module - Campneus Algolia Search",
+    "description": "Campneus Magento 2 Module Algolia",
     "minimum-stability": "dev",
     "require": {
         "php": "7.0.2|7.0.4|~7.0.6|~7.1.0|~7.1.10",
