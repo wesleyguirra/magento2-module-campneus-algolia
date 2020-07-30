@@ -2,6 +2,7 @@
     "name": "webjump/magento2-module-campneus-algolia",
     "license": "proprietary",
     "type": "magento2-module",
+    "version": "2.0.0",
     "description": "Campneus Magento 2 Module Algolia",
     "minimum-stability": "dev",
     "require": {
